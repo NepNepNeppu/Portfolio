@@ -1,11 +1,11 @@
 p {
     color: white;
-    font-size: 8vw;
+    font-size: 6vw;
     font-family: "Rubik", sans-serif;
-    margin: 0rem;
+    margin: 5rem;
     text-transform: uppercase;
+    text-justify: auto;
     text-align: center;
-    /* transition: 500ms; */
 }
 
 body {
@@ -32,15 +32,15 @@ body {
 
 @keyframes sway {
     0% {
-        transform: rotate(-5deg)
+        transform: rotate(-3deg)
     }
 
     50% {
-        transform: rotate(5deg)
+        transform: rotate(3deg)
     }
 
     100% {
-        transform: rotate(-5deg)
+        transform: rotate(-3deg)
     }
 }
 
@@ -65,12 +65,10 @@ body {
 
 .fancy>.letter {
     display: inline-block;
-    /* transition: 400ms; */
 }
 
 .fancy:hover>.letter {
-    animation: float 2s ease-in-out 100ms infinite, colorwave 3s ease-in-out 100ms infinite;
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: float 2s ease-in-out 100ms infinite, colorwave 4s ease-in-out 100ms infinite;
 }
 
 .fancy:hover>.letter>.text {
@@ -78,9 +76,9 @@ body {
 }
 
 .line {
-    display: flex;
+    /* display: inline-block; */
     justify-content: space-around;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
-}
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+} 
