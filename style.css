@@ -8,6 +8,18 @@ p {
     text-align: center;
 }
 
+.subheader {
+    font-size: 4vw;
+    font-style: italic;
+    margin: 3rem;
+}
+
+.subtext {
+    font-size: 3vw;
+    margin: 3rem;
+    text-transform:none;
+}
+
 body {
     background-color: #0f0f0f;
 }
@@ -76,9 +88,12 @@ body {
 }
 
 .line {
-    /* display: inline-block; */
     justify-content: space-around;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+} 
+
+.row {
+    justify-content: space-around;
 } 

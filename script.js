@@ -15,10 +15,10 @@ const enhance = (id) => {
         span.className = "text";
         span.innerText = letter;
 
-        span.style.animationDelay = index * -100 + 'ms';
-        span.style.animationComposition = "add";
-        div.style.animationDelay = index * -100 + 'ms';
         span.style.whiteSpace = "pre"
+        span.style.animationComposition = "add";
+        span.style.animationDelay = index * 100 + 'ms';
+        div.style.animationDelay = index * -100 + 'ms';
         // span.style.animationDelay = Math.floor(Math.random() * 100) + 'ms';
 
         span.classList.add('animate')
