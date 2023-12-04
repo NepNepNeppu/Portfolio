@@ -29,6 +29,4 @@ const enhance = (id) => {
     })
 }
 
-enhance("game")
 enhance("name")
-enhance("twitter")
