@@ -4,6 +4,7 @@ p {
     font-family: "Rubik", sans-serif;
     margin: 0rem;
     text-transform: uppercase;
+    text-align: center;
     /* transition: 500ms; */
 }
 
