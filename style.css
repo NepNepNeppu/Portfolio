@@ -1,0 +1,85 @@
+p {
+    color: white;
+    font-size: 8vw;
+    font-family: "Rubik", sans-serif;
+    margin: 0rem;
+    text-transform: uppercase;
+    /* transition: 500ms; */
+}
+
+body {
+    background-color: #0f0f0f;
+}
+
+#text:has(.fancy:hover) .fancy:not(.fancy:hover) {
+    color: rgba(255, 255, 255, .05);
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(-3px)
+    }
+
+    50% {
+        transform: translateY(3px)
+    }
+
+    100% {
+        transform: translateY(-3px)
+    }
+}
+
+@keyframes sway {
+    0% {
+        transform: rotate(-5deg)
+    }
+
+    50% {
+        transform: rotate(5deg)
+    }
+
+    100% {
+        transform: rotate(-5deg)
+    }
+}
+
+@keyframes colorwave {
+    0% {
+        color: #3b52c4
+    }
+
+    50% {
+        color: #34eb9e
+    }
+
+    100% {
+        color: #3b52c4
+    }
+}
+
+.fancy>.letter>.text {
+    display: inline-block;
+    transition: 600ms ease-out;
+}
+
+.fancy>.letter {
+    display: inline-block;
+    /* transition: 400ms; */
+}
+
+.fancy:hover>.letter {
+    animation: float 2s ease-in-out 100ms infinite, colorwave 3s ease-in-out 100ms infinite;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.fancy:hover>.letter>.text {
+    animation: sway 4s ease-in-out 0ms infinite;
+}
+
+.line {
+    display: flex;
+    justify-content: space-around;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
